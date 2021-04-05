@@ -27,4 +27,4 @@ Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.m
 
 ## Agradecimentos
 
-* Nélio alves
+* Nelio alves
