@@ -29,9 +29,15 @@ public class Program {
             System.out.println(sellerObj);
         }
 
-        System.out.println("\n--- TEST 3: seller findAll ----");
+        System.out.println("\n--- TEST 4: seller findAll ----");
         Seller newSeller = new Seller(null, "Jonh jones", "Jonh@gmail.com", new Date(), 5000.0, department);
         sellerDao.insert(newSeller);
         System.out.println("Inserted! new id = " + newSeller.getId());
+
+        System.out.println("\n--- TEST 5: seller findAll ----");
+        seller = sellerDao.findById(10);
+        seller.setName("John");
+        sellerDao.update(seller);
+        System.out.println("Updated success");
     }
 }
