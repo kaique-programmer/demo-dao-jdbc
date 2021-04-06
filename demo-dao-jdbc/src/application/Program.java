@@ -32,18 +32,18 @@ public class Program {
             System.out.println(sellerObj);
         }
 
-        System.out.println("\n--- TEST 4: seller findAll ----");
+        System.out.println("\n--- TEST 4: seller Insert ----");
         Seller newSeller = new Seller(null, "Jonh jones", "Jonh@gmail.com", new Date(), 5000.0, department);
         sellerDao.insert(newSeller);
         System.out.println("Inserted! new id = " + newSeller.getId());
 
-        System.out.println("\n--- TEST 5: seller findAll ----");
+        System.out.println("\n--- TEST 5: seller Update ----");
         seller = sellerDao.findById(10);
         seller.setName("John");
         sellerDao.update(seller);
         System.out.println("Updated success");
 
-        System.out.println("\n--- TEST 6: seller findAll ----");
+        System.out.println("\n--- TEST 6: seller Delete ----");
         System.out.println("Enter id for delete test: ");
         int id = scanner.nextInt();
         sellerDao.deleteById(id);
